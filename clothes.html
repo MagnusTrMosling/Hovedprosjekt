@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./css/reset.css">
+	<link rel="stylesheet" href="./css/style.css">
+	<link rel="stylesheet" href="./css/grid.css">
+	<link rel="stylesheet" href="./css/variables.css">
+	<script src="./js/clothes.js" defer></script>
+	<title>Document</title>
+</head>
+<body>
+
+	<Header class="nav_header">
+		<a href="./clothes.html"><img class="nav_logo" src="./assets/images/Clothes_logo.png" alt="logo"></a>
+		<nav>
+			<ul class="nav_links">
+				<li><a href="./clothes.html">Clothes</a></li>
+				<li><a href="./suport.html">Suport</a></li>
+			</ul>
+		</nav>
+			<li><a class="sign_up" href="./sign_in.html">sign in</a></li>
+	</Header>
+
+
+	<aside class="hoddie-filter">
+
+
+		<!-- prize -->
+		<button class="button-filter" onclick="sortClothesByPriceLowToHigh()">Low to High</button>
+		<button class="button-filter" onclick="sortClothesByPriceHighToLow()">High to Low</button>
+		<!-- prize -->
+
+		<!-- colour -->
+			<select class="button-filter button-filter-colour" id="colorFilter">
+			  <option value="all">All Colour</option>
+			  <option value="green">Green</option>
+			  <option value="blue">Blue</option>
+			  <option value="red">red</option>
+			</select>
+		<!-- colour -->
+
+		<!-- sizs -->		
+			<select class="button-filter" id="sizeFilter">
+		 	  <option  value="all">All Size</option>
+			  <option value="small">Small</option>
+			  <option value="medium">Medium</option>
+			  <option value="large">Large</option>
+			</select>
+		<!-- sizs -->
+
+		<!-- Aplay Filter -->
+			<button  class="button-filter button-filter-space" onclick="filterClothesByColorAndSize()">Apply Filters</button>
+		<!-- Aplay Filter -->
+	</aside>
+
+	<div id="clothesList">
+		<!-- Clothes list will be displayed here -->
+	  </div>
+
+	
+</body>
+</html>
